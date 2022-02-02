@@ -3,7 +3,7 @@ import recordsRouter from './routes/records.router.js'
 import usersRouter from './routes/users.router.js' 
 import morgan from 'morgan'
 import cors from "cors"
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 const app = express();
 app.use(cors())
 app.use(express.json());
