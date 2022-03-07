@@ -10,17 +10,25 @@
       "logs.json"
     ]
   },
-  "scripts": { 
+  "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
+    "seed": "node database.mongoose.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "lowdb": "^3.0.0",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.1",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.7"
   }
 }
